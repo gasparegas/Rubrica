@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="462dp"
+        android:layout_height="746dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/download" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="170dp"
+        android:layout_height="46dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="RubriGas"
+        android:textColor="#FFF9F9"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageViewDelete"
+        android:layout_width="95dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="80dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewEdit"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewEdit"
+        app:layout_constraintTop_toTopOf="@+id/imageViewEdit"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/delete" />
+
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="616dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/undo" />
+
+    <ImageView
+        android:id="@+id/imageViewEdit"
+        android:layout_width="45dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="280dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBack"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/pencil" />
+
+    <ImageView
+        android:id="@+id/imageViewFotoContatto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toStartOf="@+id/textCognome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textNome"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:gravity="center"
+        android:text="Nome"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textCognome"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFotoContatto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textCognome"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:gravity="center"
+        android:text="Cognome"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNome" />
+
+    <ImageView
+        android:id="@+id/imageViewMobile"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCognome"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/sym_action_call" />
+
+    <TextView
+        android:id="@+id/textMobile"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center"
+        android:text="Mobile"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewMobile"
+        app:layout_constraintTop_toTopOf="@+id/imageViewMobile" />
+
+    <ImageView
+        android:id="@+id/imageViewCasa"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="@+id/imageViewMobile"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewMobile"
+        app:srcCompat="@drawable/home_" />
+
+    <TextView
+        android:id="@+id/textNote"
+        android:layout_width="274dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center"
+        android:text="Note"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textSkype"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSkype"
+        app:layout_constraintTop_toBottomOf="@+id/textSkype"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center"
+        android:text="E-mail"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewEmail"
+        app:layout_constraintStart_toEndOf="@+id/imageViewEmail" />
+
+    <TextView
+        android:id="@+id/textSkype"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center"
+        android:text="Instagram"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSkype"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSkype" />
+
+    <ImageView
+        android:id="@+id/imageViewEmail"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="@+id/imageViewCasa"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCasa"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <ImageView
+        android:id="@+id/imageViewSkype"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="@+id/imageViewEmail"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewEmail"
+        app:srcCompat="@drawable/instagram_" />
+
+    <TextView
+        android:id="@+id/textCasa"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="center"
+        android:text="Casa"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewCasa"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCasa"
+        app:layout_constraintTop_toBottomOf="@+id/textMobile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
